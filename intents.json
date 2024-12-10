@@ -1,0 +1,743 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Welcome to our online banking service. How may I help you?",
+        "Hi! What can I do for you today?"
+      ]
+    },
+    {
+      "tag": "balance_check",
+      "patterns": [
+        "Check my account balance",
+        "What's my balance?",
+        "Show me my balance",
+        "How much money do I have?"
+      ],
+      "responses": [
+        "You can check your balance by logging into your account or visiting the 'Account Balance' section.",
+        "To check your balance, head over to the 'Balance Enquiry' section in your account dashboard."
+      ]
+    },
+    {
+      "tag": "fund_transfer",
+      "patterns": [
+        "How can I transfer money?",
+        "Send money to another account",
+        "Fund transfer options",
+        "Transfer funds to another bank account"
+      ],
+      "responses": [
+        "To transfer funds, log in to your account and go to the 'Fund Transfer' section.",
+        "You can transfer money via NEFT, RTGS, or IMPS from the 'Transfers' section.",
+        "Select the type of transfer (NEFT, RTGS, IMPS) and enter the recipient's account details to complete the transfer."
+      ]
+    },
+    {
+      "tag": "error_100",
+      "patterns": [
+        "What does error 100 mean?",
+        "Error 100",
+        "Transaction failed with error 100",
+        "What is error 100?"
+      ],
+      "responses": [
+        "Error 100 indicates a general network issue. Please check your internet connection or try again later.",
+        "This error occurs when there is a network connection failure. Ensure you have a stable internet connection and retry the transaction."
+      ]
+    },
+    {
+      "tag": "error_200",
+      "patterns": [
+        "What does error 200 mean?",
+        "Error 200",
+        "Transaction failed with error 200",
+        "What is error 200?"
+      ],
+      "responses": [
+        "Error 200 means there is an issue with your account authentication. Please log out and log back in.",
+        "This error occurs due to an authentication failure. Kindly re-enter your login credentials or reset your password if needed."
+      ]
+    },
+    {
+      "tag": "error_300",
+      "patterns": [
+        "What does error 300 mean?",
+        "Error 300",
+        "Transaction failed with error 300",
+        "What is error 300?"
+      ],
+      "responses": [
+        "Error 300 indicates insufficient funds in your account. Please check your balance and try again.",
+        "This error means your account balance is too low to complete the transaction. Ensure sufficient funds before proceeding."
+      ]
+    },
+    {
+      "tag": "error_400",
+      "patterns": [
+        "What does error 400 mean?",
+        "Error 400",
+        "Transaction failed with error 400",
+        "What is error 400?"
+      ],
+      "responses": [
+        "Error 400 indicates a bad request. Please check the details you entered and try again.",
+        "This error happens when there is an issue with the request format or missing information. Double-check your inputs and retry."
+      ]
+    },
+    {
+      "tag": "error_500",
+      "patterns": [
+        "What does error 500 mean?",
+        "Error 500",
+        "Transaction failed with error 500",
+        "What is error 500?"
+      ],
+      "responses": [
+        "Error 500 is a server-side issue. Please try again later, or contact customer support if the problem persists.",
+        "This error indicates an internal server error, usually due to high traffic or technical difficulties. Try again after some time."
+      ]
+    },
+    {
+      "tag": "error_600",
+      "patterns": [
+        "What does error 600 mean?",
+        "Error 600",
+        "Transaction failed with error 600",
+        "What is error 600?"
+      ],
+      "responses": [
+        "Error 600 means you have exceeded the transaction limit. Please try again with a smaller amount or wait until your daily limit resets.",
+        "This error occurs when the transaction amount exceeds the permissible limit. Check your daily transfer limits and try again."
+      ]
+    },
+    {
+      "tag": "loan_application",
+      "patterns": [
+        "How can I apply for a loan?",
+        "Loan application process",
+        "Apply for a loan",
+        "Steps to apply for a personal loan"
+      ],
+      "responses": [
+        "You can apply for a loan by logging into your account and visiting the 'Loan Services' section.",
+        "To apply for a loan, go to the 'Loan Application' section, fill in the required details, and submit the form.",
+        "You can apply for personal, home, or car loans directly from your online banking dashboard."
+      ]
+    },
+    {
+      "tag": "card_block",
+      "patterns": [
+        "How can I block my card?",
+        "Block my debit card",
+        "Block credit card",
+        "Lost my card, block it"
+      ],
+      "responses": [
+        "To block your card, log in and navigate to the 'Card Services' section, then choose 'Block Card.'",
+        "You can block your card immediately by calling our customer care or using the online 'Block Card' option.",
+        "For card blocking, go to the 'Services' tab and select 'Block Debit/Credit Card'."
+      ]
+    },
+    {
+      "tag": "transaction_history",
+      "patterns": [
+        "How can I check my transaction history?",
+        "Show my recent transactions",
+        "Transaction history",
+        "View past transactions"
+      ],
+      "responses": [
+        "You can view your transaction history by logging into your account and going to the 'Transaction History' section.",
+        "Visit the 'Account Statements' tab to see a detailed list of your past transactions.",
+        "Your recent transactions can be found under the 'Transaction History' or 'Account Activity' section."
+      ]
+    },
+    {
+      "tag": "atm_locations",
+      "patterns": [
+        "Where is the nearest ATM?",
+        "Find an ATM near me",
+        "ATM locations",
+        "ATM locator"
+      ],
+      "responses": [
+        "You can find the nearest ATM by using the 'ATM Locator' feature on our website or mobile app.",
+        "Visit our 'ATM Locator' page and enter your location to find the closest ATMs.",
+        "To find nearby ATMs, use the 'ATM Finder' option in the mobile banking app."
+      ]
+    },
+    {
+      "tag": "customer_support",
+      "patterns": [
+        "I need help",
+        "Contact customer support",
+        "Speak to a representative",
+        "Customer service number"
+      ],
+      "responses": [
+        "You can reach customer support via our toll-free number or use the live chat option on our website.",
+        "For assistance, call our customer care team or visit the 'Help & Support' section on the app.",
+        "Our customer support is available 24/7. Feel free to contact us via the provided helpline number."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "Thanks, I'm done"
+      ],
+      "responses": [
+        "Goodbye! Have a great day.",
+        "Thanks for using our service. Take care!",
+        "See you again! Stay safe."
+      ]
+    },
+    {
+      "tag": "account_opening",
+      "patterns": [
+        "How do I open an account?",
+        "What is the process to open a bank account?",
+        "Can I open an account online?"
+      ],
+      "responses": [
+        "You can open an account by visiting our website and completing the online application form.",
+        "To open a new account, visit your nearest branch or apply online through our 'Account Opening' section.",
+        "Please visit the 'New Account' page on our app or website to start the process."
+      ]
+    },
+    {
+      "tag": "interest_rates",
+      "patterns": [
+        "What are the current interest rates?",
+        "How much interest do you offer on savings?",
+        "Tell me about the interest rates on loans."
+      ],
+      "responses": [
+        "You can find the latest interest rates for savings and loans on our 'Rates' page.",
+        "Our savings account interest rate is X%, and for loans, it varies based on the type. Please visit the 'Interest Rates' section for more details.",
+        "For current interest rates on savings and loans, log into your account or check the 'Interest Rates' section of our website."
+      ]
+    },
+    {
+      "tag": "deposit_information",
+      "patterns": [
+        "How do I make a deposit?",
+        "Deposit money into my account",
+        "Ways to deposit funds"
+      ],
+      "responses": [
+        "You can deposit money through our mobile app, at an ATM, or by visiting a branch.",
+        "Visit the 'Deposit Funds' section in your account or use our app to deposit directly from your phone.",
+        "You can deposit money via cheque, cash at an ATM, or through electronic fund transfers."
+      ]
+    },
+    {
+      "tag": "account_closure",
+      "patterns": [
+        "How do I close my account?",
+        "I want to close my account",
+        "Account closure procedure"
+      ],
+      "responses": [
+        "To close your account, please visit your nearest branch or call customer support for assistance.",
+        "Account closure requests can be initiated by visiting the 'Account Settings' section.",
+        "For closing your account, contact our support team or visit a branch."
+      ]
+    },
+    {
+      "tag": "credit_card_application",
+      "patterns": [
+        "How do I apply for a credit card?",
+        "Credit card application process",
+        "Steps to get a credit card"
+      ],
+      "responses": [
+        "You can apply for a credit card online through the 'Credit Card' section of your account.",
+        "Visit the 'Credit Card Services' section and choose a card that suits your needs to start the application process.",
+        "You can apply for a credit card directly from your online banking dashboard under 'Apply for a Credit Card.'"
+      ]
+    },
+    {
+      "tag": "ABS",
+      "patterns": ["ABS", "Asset-Backed Securities"],
+      "responses": ["ABS stands for Asset-Backed Securities, financial securities backed by a pool of assets such as loans or receivables."]
+    },
+    {
+      "tag": "ACU",
+      "patterns": ["ACU", "Asian Clearing Union"],
+      "responses": ["ACU stands for Asian Clearing Union, a payment arrangement system among Asian countries to facilitate transactions."]
+    },
+    {
+      "tag": "AD",
+      "patterns": ["AD", "Authorized Dealer"],
+      "responses": ["AD stands for Authorized Dealer, a bank or financial institution authorized to deal in foreign exchange."]
+    },
+    {
+      "tag": "AIB",
+      "patterns": ["AIB", "Asian Infrastructure Bank"],
+      "responses": ["AIB stands for Asian Infrastructure Bank, a financial institution focusing on infrastructure development in Asia."]
+    },
+    {
+      "tag": "AMFI",
+      "patterns": ["AMFI", "Association of Mutual Funds in India"],
+      "responses": ["AMFI stands for Association of Mutual Funds in India, a regulatory body for mutual funds in India."]
+    },
+    {
+      "tag": "AP",
+      "patterns": ["AP", "Accounts Payable"],
+      "responses": ["AP stands for Accounts Payable, liabilities of a company to pay off short-term debts to its creditors."]
+    },
+    {
+      "tag": "AR",
+      "patterns": ["AR", "Accounts Receivable"],
+      "responses": ["AR stands for Accounts Receivable, money owed to a company by its customers for goods or services delivered."]
+    },
+    {
+      "tag": "ATM",
+      "patterns": ["ATM", "Automated Teller Machine"],
+      "responses": ["ATM stands for Automated Teller Machine, an electronic banking outlet that allows customers to complete transactions."]
+    },
+    {
+      "tag": "AUD",
+      "patterns": ["AUD", "Australian Dollar"],
+      "responses": ["AUD stands for Australian Dollar, the currency used in Australia."]
+    },
+    {
+      "tag": "BA",
+      "patterns": ["BA", "Banker's Acceptance"],
+      "responses": ["BA stands for Banker's Acceptance, a short-term debt instrument issued by a company and guaranteed by a bank."]
+    },
+    {
+      "tag": "BIS",
+      "patterns": ["BIS", "Bank for International Settlements"],
+      "responses": ["BIS stands for Bank for International Settlements, an international financial institution that serves as a bank for central banks."]
+    },
+    {
+      "tag": "BOI",
+      "patterns": ["BOI", "Bank of India"],
+      "responses": ["BOI stands for Bank of India, a major public sector bank in India."]
+    },
+    {
+      "tag": "BSE",
+      "patterns": ["BSE", "Bombay Stock Exchange"],
+      "responses": ["BSE stands for Bombay Stock Exchange, one of India's leading stock exchanges based in Mumbai."]
+    },
+    {
+      "tag": "CBLO",
+      "patterns": ["CBLO", "Collateralized Borrowing and Lending Obligation"],
+      "responses": ["CBLO stands for Collateralized Borrowing and Lending Obligation, a short-term money market instrument."]
+    },
+    {
+      "tag": "CD",
+      "patterns": ["CD", "Certificate of Deposit"],
+      "responses": ["CD stands for Certificate of Deposit, a savings account with a fixed interest rate and maturity date."]
+    },
+    {
+      "tag": "CF",
+      "patterns": ["CF", "Cash Flow"],
+      "responses": ["CF stands for Cash Flow, the total amount of money being transferred into and out of a business."]
+    },
+    {
+      "tag": "CG",
+      "patterns": ["CG", "Corporate Governance"],
+      "responses": ["CG stands for Corporate Governance, the system of rules, practices, and processes by which a company is directed and controlled."]
+    },
+    {
+      "tag": "CPI",
+      "patterns": ["CPI", "Consumer Price Index"],
+      "responses": ["CPI stands for Consumer Price Index, a measure of the average change in prices paid by consumers for goods and services."]
+    },
+    {
+      "tag": "CRR",
+      "patterns": ["CRR", "Cash Reserve Ratio"],
+      "responses": ["CRR stands for Cash Reserve Ratio, the fraction of a bank's net demand and time liabilities that must be kept in reserve with the central bank."]
+    },
+    {
+      "tag": "DCA",
+      "patterns": ["DCA", "Direct Credit Authorization"],
+      "responses": ["DCA stands for Direct Credit Authorization, an authorization to directly credit funds into a recipient's bank account."]
+    },
+    {
+      "tag": "DDA",
+      "patterns": ["DDA", "Demand Deposit Account"],
+      "responses": ["DDA stands for Demand Deposit Account, a type of bank account that allows deposits and withdrawals on demand."]
+    },
+    {
+      "tag": "DID",
+      "patterns": ["DID", "Discharge of Internal Debt"],
+      "responses": ["DID stands for Discharge of Internal Debt, referring to the repayment of domestic loans and borrowings by the government or a corporation."]
+    },
+    {
+      "tag": "DMA",
+      "patterns": ["DMA", "Departmentalized Ministries Account"],
+      "responses": ["DMA stands for Departmentalized Ministries Account, which refers to accounts managed by individual government ministries or departments."]
+    },
+    {
+      "tag": "DRI",
+      "patterns": ["DRI", "Differential Rate of Interest Scheme"],
+      "responses": ["DRI stands for Differential Rate of Interest Scheme, a scheme aimed at providing loans at concessional rates to weaker sections of society."]
+    },
+    {
+      "tag": "DSBB",
+      "patterns": ["DSBB", "Dissemination Standards Bulletin Board"],
+      "responses": ["DSBB stands for Dissemination Standards Bulletin Board, which provides information about the data dissemination practices of member countries."]
+    },
+    {
+      "tag": "DVP",
+      "patterns": ["DVP", "Delivery Versus Payment"],
+      "responses": ["DVP stands for Delivery Versus Payment, a settlement mechanism in which the transfer of securities occurs simultaneously with the payment."]
+    },
+    {
+      "tag": "ECB",
+      "patterns": ["ECB", "External Commercial Borrowing"],
+      "responses": ["ECB stands for External Commercial Borrowing, loans taken by Indian companies from foreign sources to finance business operations."]
+    },
+    {
+      "tag": "ECB",
+      "patterns": ["ECB", "European Central Bank"],
+      "responses": ["ECB stands for European Central Bank, the central bank for the Eurozone, responsible for monetary policy and financial stability."]
+    },
+    {
+      "tag": "ECGC",
+      "patterns": ["ECGC", "Export Credit and Guarantee Corporation"],
+      "responses": ["ECGC stands for Export Credit and Guarantee Corporation, providing insurance and guarantees to exporters against payment risks."]
+    },
+    {
+      "tag": "ECS",
+      "patterns": ["ECS", "Electronic Clearing Scheme"],
+      "responses": ["ECS stands for Electronic Clearing Scheme, a method for transferring funds electronically between banks."]
+    },
+    {
+      "tag": "EDMU",
+      "patterns": ["EDMU", "External Debt Management Unit"],
+      "responses": ["EDMU stands for External Debt Management Unit, responsible for managing a country's external debt and related financial operations."]
+    },
+    {
+      "tag": "EEA",
+      "patterns": ["EEA", "Exchange Equalization Account"],
+      "responses": ["EEA stands for Exchange Equalization Account, a reserve account used to manage fluctuations in foreign exchange rates."]
+    },
+    {
+      "tag": "EEC",
+      "patterns": ["EEC", "European Economic Community"],
+      "responses": ["EEC stands for European Economic Community, a regional organization aimed at economic integration and cooperation among European countries."]
+    },
+    {
+      "tag": "EEFC",
+      "patterns": ["EEFC", "Exchange Earners Foreign Currency"],
+      "responses": ["EEFC stands for Exchange Earners Foreign Currency, an account that allows businesses to hold foreign currency earned through exports."]
+    },
+    {
+      "tag": "EFR",
+      "patterns": ["EFR", "Exchange Fluctuation Reserve"],
+      "responses": ["EFR stands for Exchange Fluctuation Reserve, a reserve fund to manage and stabilize exchange rate fluctuations."]
+    },
+    {
+      "tag": "EXIM Bank",
+      "patterns": ["EXIM Bank", "Export Import Bank of India"],
+      "responses": ["EXIM Bank stands for Export Import Bank of India, which provides financial assistance to promote international trade."]
+    },
+    {
+      "tag": "HNI",
+      "patterns": ["HNI", "High Net-Worth Individual"],
+      "responses": ["HNI stands for High Net-Worth Individual, a person with a significantly high amount of investable assets."]
+    },
+    {
+      "tag": "IBAN",
+      "patterns": ["IBAN", "International Bank Account Number"],
+      "responses": ["IBAN stands for International Bank Account Number, a standardized format for identifying bank accounts internationally."]
+    },
+    {
+      "tag": "ICICI",
+      "patterns": ["ICICI", "Industrial Credit and Investment Corporation of India"],
+      "responses": ["ICICI stands for Industrial Credit and Investment Corporation of India, one of India's largest private sector banks."]
+    },
+    {
+      "tag": "IFC",
+      "patterns": ["IFC", "International Finance Corporation"],
+      "responses": ["IFC stands for International Finance Corporation, an institution that provides investment and advisory services to promote private sector development."]
+    },
+    {
+      "tag": "IFSC",
+      "patterns": ["IFSC", "Indian Financial System Code"],
+      "responses": ["IFSC stands for Indian Financial System Code, a code used to identify Indian bank branches during electronic transactions."]
+    },
+    {
+      "tag": "IMPS",
+      "patterns": ["IMPS", "Immediate Payment Service"],
+      "responses": ["IMPS stands for Immediate Payment Service, an instant interbank electronic funds transfer system in India."]
+    },
+    {
+      "tag": "IPO",
+      "patterns": ["IPO", "Initial Public Offering"],
+      "responses": ["IPO stands for Initial Public Offering, the process through which a private company offers shares to the public for the first time."]
+    },
+    {
+      "tag": "IRDA",
+      "patterns": ["IRDA", "Insurance Regulatory and Development Authority"],
+      "responses": ["IRDA stands for Insurance Regulatory and Development Authority, the regulatory body for insurance companies in India."]
+    },
+    {
+      "tag": "ISDA",
+      "patterns": ["ISDA", "International Swaps and Derivatives Association"],
+      "responses": ["ISDA stands for International Swaps and Derivatives Association, a trade organization for over-the-counter derivatives markets."]
+    },
+    {
+      "tag": "ITR",
+      "patterns": ["ITR", "Income Tax Return"],
+      "responses": ["ITR stands for Income Tax Return, a form filed with the tax authorities to report income, expenses, and other tax-related information."]
+    },
+    {
+      "tag": "JCB",
+      "patterns": ["JCB", "Japan Credit Bureau"],
+      "responses": ["JCB stands for Japan Credit Bureau, a major credit card company based in Japan."]
+    },
+    {
+      "tag": "KYC",
+      "patterns": ["KYC", "Know Your Customer"],
+      "responses": ["KYC stands for Know Your Customer, a process used by banks to verify the identity of their clients."]
+    },
+    {
+      "tag": "LAF",
+      "patterns": ["LAF", "Liquidity Adjustment Facility"],
+      "responses": ["LAF stands for Liquidity Adjustment Facility, a monetary policy tool used by central banks to adjust liquidity conditions in the banking system."]
+    },
+    {
+      "tag": "LIBOR",
+      "patterns": ["LIBOR", "London Interbank Offered Rate"],
+      "responses": ["LIBOR stands for London Interbank Offered Rate, a benchmark interest rate at which major global banks lend to one another."]
+    },
+    {
+      "tag": "M1",
+      "patterns": ["M1", "Narrow Money"],
+      "responses": ["M1 stands for Narrow Money, which includes physical currency and demand deposits."]
+    },
+    {
+      "tag": "M2",
+      "patterns": ["M2", "Broad Money"],
+      "responses": ["M2 stands for Broad Money, which includes M1 plus savings accounts, time deposits, and other near-money assets."]
+    },
+    {
+      "tag": "M3",
+      "patterns": ["M3", "Broad Money"],
+      "responses": ["M3 stands for Broad Money, a measure of the total money supply that includes M2 plus larger liquid assets."]
+    },
+    {
+      "tag": "MCLR",
+      "patterns": ["MCLR", "Marginal Cost of Funds Based Lending Rate"],
+      "responses": ["MCLR stands for Marginal Cost of Funds Based Lending Rate, the minimum interest rate that a bank can charge on loans."]
+    },
+    {
+      "tag": "MSCI",
+      "patterns": ["MSCI", "Morgan Stanley Capital International"],
+      "responses": ["MSCI stands for Morgan Stanley Capital International, a provider of global equity indices and portfolio analysis tools."]
+    },
+    {
+      "tag": "MTM",
+      "patterns": ["MTM", "Mark to Market"],
+      "responses": ["MTM stands for Mark to Market, an accounting method for valuing assets based on current market prices."]
+    },
+    {
+      "tag": "NABARD",
+      "patterns": ["NABARD", "National Bank for Agriculture and Rural Development"],
+      "responses": ["NABARD stands for National Bank for Agriculture and Rural Development, an institution that provides credit and support for rural development."]
+    },
+    {
+      "tag": "NSE",
+      "patterns": ["NSE", "National Stock Exchange"],
+      "responses": ["NSE stands for National Stock Exchange, one of India's leading stock exchanges."]
+    },
+    {
+      "tag": "NPA",
+      "patterns": ["NPA", "Non-Performing Asset"],
+      "responses": ["NPA stands for Non-Performing Asset, a loan or advance for which the borrower has not paid interest or principal for a specified period."]
+    },
+    {
+      "tag": "NPS",
+      "patterns": ["NPS", "National Pension System"],
+      "responses": ["NPS stands for National Pension System, a pension scheme introduced by the Indian government for all citizens."]
+    },
+    {
+      "tag": "OBU",
+      "patterns": ["OBU", "Offshore Banking Unit"],
+      "responses": ["OBU stands for Offshore Banking Unit, a bank branch operating outside of its home country that provides financial services to non-residents."]
+    },
+    {
+      "tag": "OD",
+      "patterns": ["OD", "Overdraft"],
+      "responses": ["OD stands for Overdraft, a facility allowing account holders to withdraw more than their account balance."]
+    },
+    {
+      "tag": "P2P",
+      "patterns": ["P2P", "Peer-to-Peer Lending"],
+      "responses": ["P2P stands for Peer-to-Peer Lending, a method of lending where borrowers and lenders deal directly with each other without intermediaries."]
+    },
+    {
+      "tag": "PFRDA",
+      "patterns": ["PFRDA", "Pension Fund Regulatory and Development Authority"],
+      "responses": ["PFRDA stands for Pension Fund Regulatory and Development Authority, which regulates and develops the pension sector in India."]
+    },
+    {
+      "tag": "POS",
+      "patterns": ["POS", "Point of Sale"],
+      "responses": ["POS stands for Point of Sale, a system used by retail stores to process sales transactions."]
+    },
+    {
+      "tag": "PPF",
+      "patterns": ["PPF", "Public Provident Fund"],
+      "responses": ["PPF stands for Public Provident Fund, a long-term savings scheme with tax benefits in India."]
+    },
+    {
+      "tag": "ROE",
+      "patterns": ["ROE", "Return on Equity"],
+      "responses": ["ROE stands for Return on Equity, a measure of a company's profitability relative to its equity."]
+    },
+    {
+      "tag": "SEBI",
+      "patterns": ["SEBI", "Securities and Exchange Board of India"],
+      "responses": ["SEBI stands for Securities and Exchange Board of India, the regulatory authority for securities markets in India."]
+    },
+    {
+      "tag": "SIP",
+      "patterns": ["SIP", "Systematic Investment Plan"],
+      "responses": ["SIP stands for Systematic Investment Plan, a method of investing a fixed amount regularly in mutual funds."]
+    },
+    {
+      "tag": "SWIFT",
+      "patterns": ["SWIFT", "Society for Worldwide Interbank Financial Telecommunication"],
+      "responses": ["SWIFT stands for Society for Worldwide Interbank Financial Telecommunication, a network for secure international financial transactions."]
+    },
+    {
+      "tag": "TDS",
+      "patterns": ["TDS", "Tax Deducted at Source"],
+      "responses": ["TDS stands for Tax Deducted at Source, a method of collecting income tax where the tax is deducted at the source of income."]
+    },
+    {
+      "tag": "UPI",
+      "patterns": ["UPI", "Unified Payments Interface"],
+      "responses": ["UPI stands for Unified Payments Interface, a real-time payment system enabling inter-bank transactions in India."]
+    },
+    {
+      "tag": "VAT",
+      "patterns": ["VAT", "Value Added Tax"],
+      "responses": ["VAT stands for Value Added Tax, a tax on the value added to goods and services at each stage of production or distribution."]
+    },
+    {
+      "tag": "WPI",
+      "patterns": ["WPI", "Wholesale Price Index"],
+      "responses": ["WPI stands for Wholesale Price Index, a measure of the average change in prices received by producers for their products."]
+    },
+    {
+      "tag": "YTM",
+      "patterns": ["YTM", "Yield to Maturity"],
+      "responses": ["YTM stands for Yield to Maturity, the total return anticipated on a bond if held until it matures."]
+    },
+    {
+      "tag": "OBU",
+      "patterns": ["OBU", "Offshore Banking Unit"],
+      "responses": ["OBU stands for Offshore Banking Unit, a bank branch operating outside of its home country that provides financial services to non-residents."]
+    },
+    {
+      "tag": "OTP",
+      "patterns": ["OTP", "One-Time Password"],
+      "responses": ["OTP stands for One-Time Password, a security feature used to verify user identity during online transactions."]
+    },
+    {
+      "tag": "PAN",
+      "patterns": ["PAN", "Permanent Account Number"],
+      "responses": ["PAN stands for Permanent Account Number, a unique identifier assigned to individuals and entities for tax purposes in India."]
+    },
+    {
+      "tag": "PIN",
+      "patterns": ["PIN", "Personal Identification Number"],
+      "responses": ["PIN stands for Personal Identification Number, a security code used to verify the identity of users accessing their accounts."]
+    },
+    {
+      "tag": "RBI",
+      "patterns": ["RBI", "Reserve Bank of India"],
+      "responses": ["RBI stands for Reserve Bank of India, the central bank of India responsible for regulating the monetary and financial system."]
+    },
+    {
+      "tag": "ROI",
+      "patterns": ["ROI", "Rate of Interest"],
+      "responses": ["ROI stands for Rate of Interest, the percentage of a loan or investment that is charged or earned over a period."]
+    },
+    {
+      "tag": "RTGS",
+      "patterns": ["RTGS", "Real-Time Gross Settlement"],
+      "responses": ["RTGS stands for Real-Time Gross Settlement, a system for transferring funds between banks in real-time."]
+    },
+    {
+      "tag": "SBI",
+      "patterns": ["SBI", "State Bank of India"],
+      "responses": ["SBI stands for State Bank of India, the largest public sector bank in India."]
+    },
+    {
+      "tag": "SEBI",
+      "patterns": ["SEBI", "Securities and Exchange Board of India"],
+      "responses": ["SEBI stands for Securities and Exchange Board of India, the regulatory authority for securities markets in India."]
+    },
+    {
+      "tag": "SWIFT",
+      "patterns": ["SWIFT", "Society for Worldwide Interbank Financial Telecommunication"],
+      "responses": ["SWIFT stands for Society for Worldwide Interbank Financial Telecommunication, a network for secure international financial transactions."]
+    },
+    {
+      "tag": "TDS",
+      "patterns": ["TDS", "Tax Deducted at Source"],
+      "responses": ["TDS stands for Tax Deducted at Source, a method of collecting income tax where the tax is deducted at the source of income."]
+    },
+    {
+      "tag": "UPI",
+      "patterns": ["UPI", "Unified Payments Interface"],
+      "responses": ["UPI stands for Unified Payments Interface, a real-time payment system enabling inter-bank transactions in India."]
+    },
+    {
+      "tag": "VAT",
+      "patterns": ["VAT", "Value Added Tax"],
+      "responses": ["VAT stands for Value Added Tax, a tax on the value added to goods and services at each stage of production or distribution."]
+    },
+    {
+      "tag": "WPI",
+      "patterns": ["WPI", "Wholesale Price Index"],
+      "responses": ["WPI stands for Wholesale Price Index, a measure of the average change in prices received by producers for their products."]
+    },
+    {
+      "tag": "YTM",
+      "patterns": ["YTM", "Yield to Maturity"],
+      "responses": ["YTM stands for Yield to Maturity, the total return anticipated on a bond if held until it matures."]
+    },
+    {
+      "tag": "SBI",
+      "patterns": ["SBI", "State Bank of India"],
+      "responses": ["SBI stands for State Bank of India, the largest public sector bank in India providing various banking services."]
+    },
+    {
+      "tag": "loan_status",
+      "patterns": [
+        "What is the status of my loan?",
+        "Check loan status",
+        "How is my loan processing?",
+        "Can you give me the status of my loan application?",
+        "Loan application status",
+        "Tell me about the progress of my loan"
+      ],
+      "responses": [
+        "You can check the status of your loan by logging into your account and visiting the 'Loan Status' section.",
+        "Your loan status can be viewed on our mobile app under 'Loan Details'.",
+        "To know the current status of your loan, visit the 'Loan Status' section on our website or contact customer support."
+      ]
+    }
+  ]
+}
